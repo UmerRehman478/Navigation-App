@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffd8d8 !important;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #e63946;
+}
+
+ul {
+  color: #e63946;
+  text-decoration: none;
+}
+
+a {
+  color: #e63946;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* All buttons default to red */
+button {
+  background-color: #e63946; /* Red */
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Button hover effect: darker red */
+button:hover {
+  background-color: #ff4d5a; /* Slightly lighter red */
+  transform: scale(1.05);
+}
+
+/* Inputs, textareas, and select dropdowns */
+input,
+textarea,
+select {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #e63946;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #ff4d5a;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #f5f5f5;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #444;
+}
+
+th {
+  background-color: #e63946;
+  color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+tr:hover {
+  background-color: #ccc;
+}
+
+/* Labels */
+label {
+  color: #f5f5f5;
+}
+
+/* Header styles */
+header {
+  color: #000000;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e63946;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4d5a;
+}
+
+/* Text selection */
+::selection {
+  background-color: #e63946;
+  color: #ffffff;
+}

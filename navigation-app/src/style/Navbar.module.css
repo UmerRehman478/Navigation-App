@@ -1,0 +1,69 @@
+/* Navigation Bar */
+* {
+  box-sizing: border-box;
+}
+.navbar_container {
+  background-color: black;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_left {
+  flex: 1;
+}
+
+/* Navigation Links */
+.nav_links {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav_links a {
+  padding: 20px;
+  display: block; /* ADDS PADDING IN THE CONTAINER */
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.nav_links a:hover {
+  color: #ff5733;
+}
+
+@media screen and (max-width: 1265px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .nav_links li {
+    display: block;
+  }
+  .nav_links li a {
+    font-size: 1.2em;
+  }
+}
+
+/* TO IMPORT NAVBAR STYLING, COPY THESE SECTIONS: 
+
+// PLACE THIS BY YOUR IMPORT STATEMENTS
+import nav_styles from "../style/Navbar.module.css";
+import Navbar from "../components/Navbar";
+
+// PLACE THIS BELOW THE CLOSING HEADER TAG.
+<div className={nav_styles.navbar_container}>
+        <Navbar />
+</div>
+
+*/

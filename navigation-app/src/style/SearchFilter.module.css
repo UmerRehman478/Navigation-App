@@ -1,0 +1,22 @@
+.searchBarContainer {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBar {
+  width: 65%;
+}
+
+@media screen and (min-width: 1310px) and (max-width: 1500px) {
+  .searchBar {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .searchBar {
+    width: 80%;
+  }
+}
